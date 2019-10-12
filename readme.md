@@ -26,7 +26,7 @@ So when I join the project as frontend dev, I focus on things below.
 - for improving products after deploy, pay much attention for writing readable code
 
 ## why frontend?
-- I think the one of the best way to provide good experiment on service is to give good UI/UX
+- I think one of the best ways to provide good experiment on service is to give good UI/UX
 - possible many ways to achive above goal
 - Of couse, I love tech!👨‍💻
 
