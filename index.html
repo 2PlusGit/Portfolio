@@ -1,0 +1,68 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/819612c693.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Vue Router -->
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    <!-- top-pageにアニメーション -->
+    <div id="app">
+        <header>
+            <div class="header-bar">
+                <div id="header-list">
+                    <router-link to="/home" tag="div" class="header-item">HOME</router-link>
+                    <router-link to="/about" tag="div" class="header-item">ABOUT</router-link>
+                    <router-link to="/portfolio" tag="div" class="header-item">PORTFOLIO</router-link>
+                    <router-link to="/contact" tag="div" class="header-item">CONTACT</router-link>
+                </div>
+                <div id="humberger-icon" @click="toggleOpen" :class="{ change: isOpen }">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div id="menu-list" :class="{ change: !isOpen }">
+                    <div id="menu-items">
+                        <div class="menu-item" @click="toggleOpen" >
+                            <router-link to="/home" tag="div" class="header-item">HOME</router-link>
+                        </div>
+                        <div class="menu-item" @click="toggleOpen" >
+                            <router-link to="/about" tag="div" @click="toggleOpen" class="header-item">ABOUT</router-link>
+                        </div>
+                        <div class="menu-item" @click="toggleOpen" >
+                            <router-link to="/portfolio" tag="div" @click="toggleOpen" class="header-item">PORTFOLIO</router-link>
+                        </div>
+                        <div class="menu-item" @click="toggleOpen" >
+                            <router-link to="/contact" tag="div" @click="toggleOpen" class="header-item">CONTACT</router-link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="top-page">
+           <!-- 各ページコンテンツ -->
+            <router-view></router-view>
+        </div>
+        <!-- メニューが出た時のコンテンツ用マスク -->
+        <div id="mask" :class="{ change: isOpen }" @click="toggleOpen"></div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- js file -->
+    <script src="js/main.js"></script>
+</top-page>
+</html>
