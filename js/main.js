@@ -93,9 +93,7 @@ const Portfolio ={
                 <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-title">仮</p>
-                        <p class="card-text">仮</p>
-                        <a href="#" class="btn btn-secondary">Go somewhere</a>
+                        <p class="card-title">随時追加予定</p>
                     </div>
                 </div>
                 </div>
@@ -143,7 +141,7 @@ const Contact ={
 }
 
 const routes = [
-    {path: '/home', component: Home},
+    {path: '/', component: Home},
     {path: '/about', component: About},
     {path: '/portfolio', component: Portfolio},
     {path: '/contact', component: Contact}
