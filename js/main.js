@@ -93,8 +93,18 @@ const Portfolio ={
                 <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-title">随時追加予定</p>
-                    </div>
+                    <p class="card-title" >
+                    <a href='https://github.com/2PlusGit/vuegle_keep' target="_blank">Vuegle Keep</a></p>
+                    <p class="card-text">簡単なメモアプリ</p>
+                    <p class="card-text">
+                        <span class="badge badge-warning">HTML/CSS</span>
+                        <span class="badge badge-info">Bootstrap-vue</span>
+                        <span class="badge badge-primary">JavaScript</span>
+                        <span class="badge badge-success">Vue</span>
+                        <span class="badge badge-success">Vuex</span>
+                        <span class="badge badge-secondary">Git</span>
+                    </p>
+                </div>
                 </div>
                 </div>
             </div>
@@ -110,31 +120,33 @@ const Contact ={
             <h1>CONTACT</h1>
         </div>
         <div class="page-contents container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <span class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </span>
-                        <p class="card-title">GitHub</p>
-                        <p class="card-text">ポートフォリオのリポジトリを公開しています</p>
-                        <a href="#" class="btn btn-secondary">Go 2PlusGit</a>
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <span class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <p class="card-title">GitHub</p>
+                            <p class="card-text">ポートフォリオのリポジトリを公開しています</p>
+                            <a href="https://github.com/2PlusGit" class="btn btn-secondary">Go to 2PlusGit</a>
+                        </div>
                     </div>
                 </div>
+                <div class="col-sm-6">
+                    <div class="card text-center" >
+                        <div class="card-body">
+                            <span class="contact-icon">
+                                <i class="fab fa-twitter-square"></i>
+                            </span>
+                            <p class="card-title">Twitter</p>
+                            <p class="card-text">日々感じたことを呟いています</p>
+                            <a href="https://twitter.com/2plus_increment" class="btn btn-secondary" target="_blank">Go to @2plus_increment</a>
+                        </div>
+                    </div>
+                </div>    
             </div>
-            <div class="col-sm-6">
-                <div class="card text-center" >
-                    <div class="card-body">
-                        <span class="contact-icon">
-                            <i class="fab fa-twitter-square"></i>
-                        </span>
-                        <p class="card-title">Twitter</p>
-                        <p class="card-text">日々感じたことを呟いています</p>
-                        <a href="https://twitter.com/2plus_increment" class="btn btn-secondary" target="_blank">Go @2plus_increment</a>
-                    </div>
-                </div>
-            </div>      
         </div>
     </div>
     `
